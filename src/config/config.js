@@ -5,8 +5,10 @@ const port = process.env.PORT;
 const user = process.env.TP_LINK_USER;
 const serverAddress = process.env.SERVER_ADDRESS;
 const password = process.env.TP_LINK_PASSWORD;
-const cam1Url = process.env.TP_LINK_CAM_1_URL;
-const cam2Url = process.env.TP_LINK_CAM_2_URL;
+const cam1HDUrl = process.env.CAM_1_HD_URL;
+const cam1SDUrl = process.env.CAM_1_SD_URL;
+const cam2HDUrl = process.env.CAM_2_HD_URL;
+const cam2SDUrl = process.env.CAM_2_SD_URL;
 const cam1Endpoint = "/ws/api/stream/cam1";
 const cam2Endpoint = "/ws/api/stream/cam2";
 
@@ -16,8 +18,10 @@ module.exports = {
   user,
   serverAddress,
   password,
-  cam1Url,
-  cam2Url,
+  cam1HDUrl,
+  cam1SDUrl,
+  cam2HDUrl,
+  cam2SDUrl,
   cam1Endpoint,
   cam2Endpoint,
 };
